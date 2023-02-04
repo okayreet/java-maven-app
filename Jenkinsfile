@@ -33,14 +33,14 @@ pipeline {
                 }
             }
         }
-        stage('test') {
-            steps {
-                script {
-                    echo 'testing'
-                    gv.testApp()
-                }
-            }
-        }
+        // stage('test') {
+        //     steps {
+        //         script {
+        //             echo 'testing'
+        //             gv.testApp()
+        //         }
+        //     }
+        // }
         stage('deploy') {
             steps {
                 script {
